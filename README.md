@@ -9,7 +9,7 @@ Dockerをインストールしておいてください。
 
 # Usage
 
-1. このリポジトリをクローンし、生成されたディレクトリ内に移動してください。
+1. このリポジトリをクローンし、生成されたディレクトリ内に移動してください。このディレクトリは名前を変更しても構いません。
 ```bash
 $ git clone https://github.com/takaoS/workspace-C_plus_plus
 $ cd workspace-C_plus_plus
