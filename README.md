@@ -26,7 +26,12 @@ Dockerfile       README.md        prepare.sh   run-container.sh workspace
 
 3. 以降、"./run-container.sh" を実行して立ち上がるコンテナ内で作業をしてください。ホスト上の workspace ディレクトリと、コンテナ内の /home が同期されているので、ファイルの編集・保存などはその中で行ってください。試しに、workspace 内でファイルを作成すると、同じものがコンテナ内の /home に作成されるはずです。
 ```bash
-
+$ ./run-container.sh
+/home# touch sample.txt
+/home# exit
+$ cd workspace/
+$ ls
+sample.txt
 ```
 
 
