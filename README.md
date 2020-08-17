@@ -15,11 +15,11 @@ $ git clone https://github.com/takaoS/workspace-C_plus_plus
 $ cd workspace-C_plus_plus
 ```
 
-2. "sh prepare.sh" を実行してください。"programming" コンテナが立ち上がります。"docker ps -a" コマンドで、立ち上げたコンテナのステータスを確認できます。
+2. "sh prepare.sh" を実行してください。"programming" コンテナが立ち上がります。"docker ps -a" コマンドで、立ち上げたコンテナのステータスを確認できます。また、今後作業するディレクトリとして、workspace が生成されます。
 ```bash
 $ sh prepare.sh
 $ ls
-Dockerfile  README.md  exec.sh  prepare.sh  run.sh  stop.sh  workspace
+Dockerfile  README.md  exec.sh  prepare.sh  run.sh  workspace
 ```
 
 3. "docker exec -it programming /bin/bash" でログインしたコンテナ内で作業をしてください（"sh exec.sh" でもログインできます）。ホスト上の workspace ディレクトリと、コンテナ内の /home が同期されているので、ファイルの編集・保存などはその中で行ってください。試しに、workspace 内でファイルを作成すると、同じものがコンテナ内の /home に作成されるはずです。
